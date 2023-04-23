@@ -115,7 +115,7 @@ def plt_network(X,Y,netf):
     yhat = (fwb > 0.5).astype(int)
     ax[1].scatter(X[yhat[:,0]==1,0],X[yhat[:,0]==1,1], s=70, marker='x', c='orange', label="Predicted Good Roast" )
     ax[1].scatter(X[yhat[:,0]==0,0],X[yhat[:,0]==0,1], s=100, marker='o', facecolors='none', 
-                   edgecolors=dlc["dldarkblue"],linewidth=1,  label="Predicted Bad Roast")
+                   edgecolors=dlc["dldarkblue"],linewidth=1,  label="Bad Roast")
     ax[1].set_title(f"network decision")
     ax[1].set_xlabel("Temperature \n(Celsius)",size=12)
     ax[1].set_ylabel("Duration \n(minutes)",size=12)
